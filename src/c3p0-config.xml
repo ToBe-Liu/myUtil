@@ -1,0 +1,18 @@
+
+<c3p0-config >
+  <named-config name="c3p0">  
+  	<property name="user">db01</property>
+  	<property name="password">123</property>
+  	<property name="jdbcUrl">jdbc:oracle:thin:@localhost:1521:xe</property>
+  	<property name="driverClass">oracle.jdbc.driver.OracleDriver</property>
+  	
+    <property name="acquireIncrement">2</property>
+    <property name="initialPoolSize">5</property>
+    <property name="minPoolSize">5</property>
+    <property name="maxPoolSize">20</property>
+    
+    <property name="maxStatements">20</property> 
+    <property name="maxStatementsPerConnection">5</property>
+
+  </named-config>
+</c3p0-config>
